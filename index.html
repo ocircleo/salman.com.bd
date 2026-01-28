@@ -82,6 +82,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 3rem;
       }
 
       .logo {
@@ -98,8 +99,10 @@
 
       .nav-links {
         display: flex;
-        gap: 2rem;
+        gap: 0.5rem;
         align-items: center;
+       
+        flex-wrap: wrap;
       }
 
       .nav-links a {
@@ -349,6 +352,11 @@
       .footer-links a:hover {
         color: var(--primary);
       }
+      @media screen and (min-width: 768px) {
+        .nav-links {
+          gap: 2rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -561,12 +569,14 @@
       <div class="container">
         <div class="footer-links">
           <a href="https://www.linkedin.com/in/salmanh-o" target="_blank"
-            >LinkedIn</a>
+            >LinkedIn</a
+          >
           <a href="https://github.com/ocircleo" target="_blank">GitHub</a>
           <a
             href="https://www.facebook.com/salman.hossain.552677"
             target="_blank"
-            >Facebook</a>
+            >Facebook</a
+          >
         </div>
         <p style="color: var(--slate-400); font-size: 0.8rem">
           &copy; <span id="year"></span> Salman Since 2022. Made in Bangladesh.
